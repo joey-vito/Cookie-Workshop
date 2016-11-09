@@ -1,8 +1,8 @@
 
 span {
 	font-size: 25px;
-	margin-top: 100px;
 	padding-top: 25px;
+	margin-left: 30px;
 }
 
 body{
@@ -32,7 +32,7 @@ body{
 	margin-left: 0px;
 	background-color: #2A7299;
 	color: white;
-	width: 200px;
+	width: 300px;
 	text-align: center;
 	clear: left;
 }
@@ -43,15 +43,23 @@ body{
 	font-size: 20px;
 }
 
+#order {
+	margin-bottom: 0px;
+	margin-top: 30px;
+	font-size: 20px;
+	clear: all;
+	width: 200px;
+	height: 30px;
+}
+
 #choco_val {
 	margin-top: 10px;
 	border: solid 2px black;
 	background-color: #D1B649;
 	padding: 5px;
 	width: 45px;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 20px;
+	display: inline-block;
 }
 
 #sugar_val {
@@ -60,9 +68,8 @@ body{
 	background-color: #D1B649;
 	padding: 5px;
 	width: 45px;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 20px;
+	display: inline-block;
 }
 
 #lemon_val {
@@ -71,9 +78,8 @@ body{
 	background-color: #D1B649;
 	padding: 5px;
 	width: 45px;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 20px;
+	display: inline-block;
 }
 
 .cookie {
@@ -81,19 +87,22 @@ body{
 }
 
 #submit {
-	font-size: 40px;
+	font-size: 20px;
 	width: 100px;
 	height: 50px;
 }
 
 #choco {
 	font-size: 20px;
+	width: 50px;
 }
 
 #sugar {
 	font-size: 20px;
+	width: 50px;
 }
 
 #lemon {
 	font-size: 20px;
+	width: 50px;
 }
