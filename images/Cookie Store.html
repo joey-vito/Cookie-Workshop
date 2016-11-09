@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)file:///Users/joeyjohnson/Desktop/Exercises/Day17/index.html?quantity=4&quantity=0&quantity=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+			<title>Cookie Store</title>
+			<script src="./Cookie Store_files/jquery.min.js"></script>
+			<script type="text/javascript" src="./Cookie Store_files/cookies.js"></script>
+			<script type="text/javascript" src="./Cookie Store_files/app.js"></script>
+			<link rel="stylesheet" type="text/css" href="./Cookie Store_files/style.css">
+		</head>
+	<body>
+	<img id="main_image" src="./Cookie Store_files/cookie_monster.png">
+
+		<div id="sidebar">
+				<span>Total Chocolate:</span>
+				<div id="choco_val">0</div>
+				<span>Total Sugar:</span>
+				<div id="sugar_val">0</div>
+				<span>Total Lemon:</span>
+				<div id="lemon_val">0</div>
+			<button id="reset" onclick="expireCookies()">Cookies, Disappear!</button>
+		</div>
+
+			<div id="wrapper">
+				<h1>Feed the Monster!</h1>
+
+					<form>
+					<img src="./Cookie Store_files/choco chip.jpeg">
+			  			<div class="cookie">Chocolate:</div><br>
+			  			<input id="choco" type="number" name="quantity" min="0" max="100" step="1" value="0"><br><br>
+
+			  		<img src="./Cookie Store_files/sugar.jpeg"><br>	
+			  			<div class="cookie"> Sugar:</div><br>
+			  			<input id="sugar" type="number" name="quantity" min="0" max="100" step="1" value="0"><br><br>
+
+			  		<img src="./Cookie Store_files/lemon.jpeg"><br>	
+			  			<div class="cookie"> Lemon:</div><br>
+			  			<input id="lemon" type="number" name="quantity" min="0" max="100" step="1" value="0"><br><br>
+			  			<input id="submit" onclick="setCookie()" onkeyup="orderHistory()" type="submit">
+					</form>
+
+			</div>
+	
+</body></html>

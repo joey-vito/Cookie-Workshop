@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Cookie Store</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript"  src="cookie.js"></script>
-</head>
-<body>
-	<div id="wrapper">
-		<form action="action_page.php">
-  			<div>Chocolate:<br>
-  			<input id="name" type="number" name="quantity"
-  			 min="0" max="100" step="1" value="0"><br>
-  			<input type="submit"><br><br>
-  			
-  			Sugar:<br>
-  			<input  id="name1" type="number" name="quantity"
-  			 min="0" max="100" step="1" value="0"><br>
-  			<input type="submit"><br><br>
-  			
-  			Lemon:<br>
-  			<input  id="name2" type="number" name="quantity"
-  			 min="0" max="100" step="1" value="0"><br>
-  			<input type="submit">
-  			</div>
-		</form>
-		
+		<head>
+			<title>Cookie Store</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			<script type="text/javascript"  src="cookies.js"></script>
+			<script type="text/javascript" src="app.js"></script>
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
+	<body>
+	<img id="main_image" src="images/cookie_monster.png">
 
-		
-	</div>
+		<div id="sidebar">
+				<span>Total Chocolate:</span>
+				<div id="choco_val">0</div>
+				<span>Total Sugar:</span>
+				<div id="sugar_val">0</div>
+				<span>Total Lemon:</span>
+				<div id="lemon_val">0</div>
+			<button id="reset" onclick="expireCookies()">Cookies, Disappear!</button>
+		</div>
 
-</body>
+			<div id="wrapper">
+				<h1>Feed the Monster!</h1>
+
+					<form>
+					<img src="images/choco chip.jpeg">
+			  			<div class="cookie">Chocolate:</div><br>
+			  			<input id="choco" type="number" name="quantity"
+			  			 min="0" max="100" step="1" value="0"><br><br>
+
+			  		<img src="images/sugar.jpeg"><br>	
+			  			<div class="cookie"> Sugar:</div><br>
+			  			<input  id="sugar" type="number" name="quantity"
+			  			 min="0" max="100" step="1" value="0"><br><br>
+
+			  		<img src="images/lemon.jpeg"><br>	
+			  			<div class="cookie"> Lemon:</div><br>
+			  			<input  id="lemon" type="number" name="quantity"
+			  			 min="0" max="100" step="1" value="0"><br><br>
+			  			<input id="submit" onclick= "setCookie()" onkeyup="orderHistory()" type="submit">
+					</form>
+
+			</div>
+	</body>
 </html>
